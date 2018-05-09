@@ -16,7 +16,8 @@ const style = {
     },
     text: {
         fontWeight: 'bold',
-        fontSize: 16
+        fontSize: 20,
+        marginLeft: 20
     }
 };
 
@@ -29,10 +30,9 @@ export default class Expense extends Component {
         return (
             <View>
                 <View style={style.rowData}>
-                    {console.log(colors[this.props.index])}
                     <Entypo name={this.props.item.icon} size={25} color={colors[this.props.index]}/>
-                    <Text style={{marginLeft: 20}}>{this.props.item.name}</Text>
-                    <Text style={{marginLeft: 20}}>{this.props.item.percentage}</Text>
+                    <Text style={style.text}>{this.props.item.name}</Text>
+                    <Text style={style.text}>{this.props.item.percentage}</Text>
                 </View>
             </View>
         )

@@ -14,8 +14,10 @@ const style = {
         backgroundColor: '#A6DCF7'
     },
     text: {
-        fontSize: 18,
-        fontWeight: "400"
+        color: "#E21932",
+        fontSize: 28,
+        fontWeight: "bold",
+        marginLeft: 30
     },
     rowData: {
         flex: 1,
@@ -28,15 +30,19 @@ const renderItem = ({item, index}) => {
     return <Expense item={item} index={index}/>
 };
 
+const keyExtractor = (item, index) => item.id;
+
 export const ExpensesScreen = () => (
     <View style={style.container}>
         <View style={style.rowData}>
             <Entypo name="gauge" size={50} color="#E21932" />
-            <Text styl={style.text}>Dashboard</Text>
+            <Text style={style.text}>Dashboard</Text>
         </View>
         <Chart/>
         <FlatList
+            style={{marginTop: 30}}
             data={expenses}
-            renderItem={renderItem}/>
+            renderItem={renderItem}
+            keyExtractor={keyExtractor}/>
     </View>
 );

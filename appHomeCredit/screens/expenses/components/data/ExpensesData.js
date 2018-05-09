@@ -26,31 +26,37 @@ export const actions = [
 
 export const expenses = [
     {
+        id: '1',
         icon: "shopping-bag",
         name: "Shopping",
         percentage: "7%"
     },
     {
+        id: '2',
         icon: "home",
         name: "Accommodation",
         percentage: "16%"
     },
     {
+        id: '3',
         icon: "drink",
         name: "Food & drink",
         percentage: "8%"
     },
     {
+        id: '4',
         icon: "aircraft",
         name: "Transport",
         percentage: "27%"
     },
     {
+        id: '5',
         icon: "tripadvisor",
         name: "Travel",
         percentage: "16%"
     },
     {
+        id: '6',
         icon: "slideshare",
         name: "Entertainment & Other",
         percentage: "16%"

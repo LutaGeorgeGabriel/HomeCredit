@@ -1,8 +1,7 @@
 import React, {Component} from "react";
 import {Text, View} from "react-native";
 import Entypo from "react-native-vector-icons/Entypo";
-import FontAwesome from "react-native-vector-icons/FontAwesome";
-import {actions, colors, percentages, expenses} from "./data/ExpensesData";
+import {colors} from "./data/ExpensesData";
 
 
 const style = {

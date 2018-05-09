@@ -1,10 +1,9 @@
-import React from 'react'
-import Chart from './components/Chart'
-import {Text, View, FlatList} from 'react-native';
-import Expense from './components/Expense'
+import React from "react";
+import Chart from "./components/Chart";
+import {FlatList, Text, View} from "react-native";
+import Expense from "./components/Expense";
 import Entypo from "react-native-vector-icons/Entypo";
-
-import {actions, colors, percentages, expenses} from "./components/data/ExpensesData";
+import {expenses} from "./components/data/ExpensesData";
 
 const style = {
     container: {

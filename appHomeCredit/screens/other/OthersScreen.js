@@ -1,7 +1,7 @@
 import React from "react";
-import {Text, View, StyleSheet, Image} from "react-native";
-import { SuperGridSectionList } from 'react-native-super-grid';
-import {sections, data} from './components/data/OthersData'
+import {Image, StyleSheet, Text, View} from "react-native";
+import {SuperGridSectionList} from "react-native-super-grid";
+import {data, sections} from "./components/data/OthersData";
 import OtherAction from "./components/OtherAction";
 
 
@@ -42,7 +42,6 @@ const styles = StyleSheet.create({
 });
 
 
-const logo = require('../../resources/slogan.png');
 const mascot = require('../../resources/ren.png');
 const code = require('../../resources/qr.png');
 

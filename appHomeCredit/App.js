@@ -1,6 +1,5 @@
 import React from "react";
 import Entypo from "react-native-vector-icons/Entypo";
-import {StyleSheet} from "react-native";
 import {createBottomTabNavigator} from "react-navigation";
 import {MapsScreen} from "./screens/maps/MapsScreen";
 import {ExpensesScreen} from "./screens/expenses/ExpensesScreen";

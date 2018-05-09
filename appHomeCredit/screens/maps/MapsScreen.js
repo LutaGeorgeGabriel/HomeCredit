@@ -30,7 +30,20 @@ export const MapsScreen = () => (
                 longitude: 26.07030,
                 latitudeDelta: 0.0922,
                 longitudeDelta: 0.0421,
-            }} />
+            }}>
+
+            <MapView.Marker
+                coordinate={{latitude: 44.4138053,
+                    longitude: 26.1170274}}
+                title={"Simplity BI Solutions EN"}
+                description={"Corporate Office"}/>
+            <MapView.Marker
+                coordinate={{latitude: 44.4108346,
+                    longitude: 26.1176862 }}
+                title={"ATM"}
+                description={"ATM close to our office"}/>
+
+        </MapView>
     </View>
 );
 

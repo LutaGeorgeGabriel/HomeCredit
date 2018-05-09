@@ -4,7 +4,7 @@ export const colors = [
     "darkorange",       // food & drink
     "darkturquoise",    // transport
     "orangered",        // travel
-    "chartreuse",       // entertainment & other
+    "limegreen",       // entertainment & other
 ];
 
 // 7%  - shopping

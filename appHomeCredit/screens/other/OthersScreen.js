@@ -1,11 +1,9 @@
 import React from "react";
-import {Text, View, StyleSheet} from "react-native";
+import {Text, View, StyleSheet, Image} from "react-native";
 import { SuperGridSectionList } from 'react-native-super-grid';
+import {sections, data} from './components/data/OthersData'
+import OtherAction from "./components/OtherAction";
 
-const style = {
-    flex: 1,
-    paddingTop: 22
-};
 
 const styles = StyleSheet.create({
     gridView: {
@@ -13,7 +11,8 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     itemContainer: {
-        justifyContent: 'flex-end',
+        justifyContent: 'center',
+        alignItems: "center",
         borderRadius: 5,
         padding: 10,
         height: 150,
@@ -28,45 +27,38 @@ const styles = StyleSheet.create({
         fontSize: 12,
         color: '#fff',
     },
+    container : {
+        flex: 1,
+        paddingTop: 22,
+        backgroundColor: '#A6DCF7',
+    },
+    header: {
+        flex: 0,
+        height: 200,
+        backgroundColor: '#A6DCF7',
+        flexDirection: "row",
+        justifyContent: "center"
+    }
 });
 
+
+const logo = require('../../resources/slogan.png');
+const mascot = require('../../resources/ren.png');
+const code = require('../../resources/qr.png');
+
+
 export const OthersScreen = () => (
-    <View style={style}>
+    <View style={styles.container}>
+        <View style={styles.header}>
+            <Image source={mascot}/>
+            <Image source={code}/>
+        </View>
         <SuperGridSectionList
             itemDimension={130}
-            sections={[
-                {
-                    title: 'Title1',
-                    data: [
-                        { name: 'TURQUOISE', code: '#1abc9c' }, { name: 'EMERALD', code: '#2ecc71' },
-                        { name: 'PETER RIVER', code: '#3498db' }, { name: 'AMETHYST', code: '#9b59b6' },
-                        { name: 'WET ASPHALT', code: '#34495e' }, { name: 'GREEN SEA', code: '#16a085' },
-                        { name: 'NEPHRITIS', code: '#27ae60' },
-                    ]
-                },
-                {
-                    title: 'Title2',
-                    data: [
-                        { name: 'WISTERIA', code: '#8e44ad' }, { name: 'MIDNIGHT BLUE', code: '#2c3e50' },
-                        { name: 'SUN FLOWER', code: '#f1c40f' }, { name: 'CARROT', code: '#e67e22' },
-                        { name: 'ALIZARIN', code: '#e74c3c' }, { name: 'CLOUDS', code: '#ecf0f1' },
-                    ]
-                },
-                {
-                    title: 'Title3',
-                    data: [
-                        { name: 'BELIZE HOLE', code: '#2980b9' }, { name: 'CONCRETE', code: '#95a5a6' }, { name: 'ORANGE', code: '#f39c12' },
-                        { name: 'PUMPKIN', code: '#d35400' }, { name: 'POMEGRANATE', code: '#c0392b' },
-                        { name: 'SILVER', code: '#bdc3c7' }, { name: 'ASBESTOS', code: '#7f8c8d' }
-                    ]
-                }
-            ]}
+            sections={sections}
             style={styles.gridView}
             renderItem={({ item }) => (
-                <View style={[styles.itemContainer, { backgroundColor: item.code }]}>
-                    <Text style={styles.itemName}>{item.name}</Text>
-                    <Text style={styles.itemCode}>{item.code}</Text>
-                </View>
+                <OtherAction item={item}/>
             )}
             renderSectionHeader={({ section }) => (
                 <Text style={{ color: 'green' }}>{section.title}</Text>

@@ -582,7 +582,7 @@
       <updated>1525767729340</updated>
       <workItem from="1525767731819" duration="9497000" />
       <workItem from="1525798081024" duration="17004000" />
-      <workItem from="1525859306912" duration="4217000" />
+      <workItem from="1525859306912" duration="4245000" />
     </task>
     <task id="LOCAL-00001" summary="added project config files">
       <created>1525862852936</created>
@@ -619,11 +619,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525865501460</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updated project config files">
+      <created>1525865533405</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1525865533405</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30718000" />
+    <option name="totallyTimeSpent" value="30746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="0" width="2560" height="1080" extended-state="0" />
@@ -660,7 +667,8 @@
     <MESSAGE value="added gauge icon" />
     <MESSAGE value="changed color" />
     <MESSAGE value="added ids to pe pus as keys on items" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ids to pe pus as keys on items" />
+    <MESSAGE value="updated project config files" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated project config files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

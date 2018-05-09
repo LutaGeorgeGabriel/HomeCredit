@@ -21,8 +21,7 @@ export const AccountsScreen = () => (
     <View style={style.container}>
         <StatusBar hidden={true} />
         <View style={style.logo}>
-            <Image
-                source={logo}/>
+            <Image source={logo}/>
         </View>
         <AccountList/>
     </View>

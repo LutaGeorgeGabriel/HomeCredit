@@ -22,7 +22,7 @@ export default createBottomTabNavigator(
                 if (routeName === 'Accounts') {
                     iconName = "wallet";
                 } else if (routeName === 'Branches') {
-                    iconName = "map";
+                    iconName = "compass";
                 } else if (routeName === "Expenses") {
                     iconName = "pie-chart";
                 } else if (routeName === "Others") {

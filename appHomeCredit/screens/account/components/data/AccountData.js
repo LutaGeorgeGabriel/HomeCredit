@@ -1,5 +1,13 @@
 export default [
     {
+        title: 'Stocks',
+        data: [
+            {
+                icon: 'stocks'
+            }
+        ]
+    },
+    {
         title: 'Current Accounts',
         data: [
             {

@@ -9,6 +9,8 @@ const style = {
         backgroundColor: '#A6DCF7'
     },
     logo : {
+        height: 120,
+        marginTop: 10,
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center'

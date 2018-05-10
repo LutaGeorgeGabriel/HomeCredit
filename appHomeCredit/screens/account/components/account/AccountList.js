@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {SectionList, StyleSheet, Text, View} from "react-native";
 import Account from "./Account";
 import data from "../data/AccountData"
+import {Stocks} from '../stocks/Stocks'
 
 export default class AccountList extends Component {
     render() {
@@ -9,9 +10,14 @@ export default class AccountList extends Component {
             <View style={styles.container}>
                 <SectionList
                     sections={data}
-                    renderItem={({item}) =>
-                        <Account data={item}/>
-                    }
+                    renderItem={({item}) => {
+                        if(item.icon === 'stocks') {
+                            return <Stocks />
+                        }
+                        else {
+                            return <Account data={item}/>
+                        }
+                    }}
                     renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
                     keyExtractor={(item, index) => index}
                 />

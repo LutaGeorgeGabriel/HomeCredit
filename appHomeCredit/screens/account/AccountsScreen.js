@@ -10,7 +10,7 @@ const style = {
     },
     logo : {
         height: 120,
-        marginTop: 10,
+        marginTop: 15,
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center'
